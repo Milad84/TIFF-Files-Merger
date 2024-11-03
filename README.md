@@ -13,8 +13,7 @@ This project provides Python scripts for merging large sets of geospatial TIFF f
   - [Option 2: High-Memory Version](#option-2-high-memory-version)
 - [Explanation](#explanation)
 - [Visualization](#visualization)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 The Canopy Cover Mosaic Project is designed to handle and process large sets of TIFF files representing geospatial data, such as canopy cover. The scripts can be adjusted based on the available system resources.
@@ -171,12 +170,12 @@ merge_all_tiffs(tiff_files, final_output_path)
 
 print(f"Final mosaic created successfully in {output_directory}!")
 ```
-Explanation
+## Explanation
 Memory-Constrained Version: Resamples and merges TIFF files in smaller chunks to reduce memory usage.
 High-Memory Version: Directly merges all TIFF files in one step, optimized for systems with ample memory.
-Visualization
+## Visualization
 Use QGIS or other GIS platforms to visualize the final mosaic. You can add basemaps in QGIS using the QuickMapServices plugin for context.
 
-Adding a Basemap in QGIS
+## Adding a Basemap in QGIS
 Install the QuickMapServices plugin from the Plugins menu.
 Use it to add basemaps like Google Satellite or OpenStreetMap.
