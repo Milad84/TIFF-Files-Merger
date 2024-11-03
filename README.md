@@ -51,6 +51,21 @@ set: os.environ['PROJ_LIB'] = r"C:\Python310\lib\site-packages\pyproj\proj_dir\s
 
  Replace the path with the one you get in the output of the above code.
 
+## Setting the Path to the Directory of TIFF Files
+Before running the scripts, specify the path to the directory where your TIFF files are stored. This is crucial for the script to locate and process the files correctly.
+
+## How to Set the Path
+Locate Your TIFF Files
+
+Ensure you know the exact path to the folder containing your TIFF files. For example, if your files are located in E:\Data\canopy cover-20241103T154241Z-001\canopy cover, this is the path you will use.
+## Update the Script
+
+In the script, find the line where the tiff_directory variable is defined:
+```bash
+tiff_directory = "E:\\Data\\canopy cover-20241103T154241Z-001\\canopy cover"
+
+```
+Replace the string (the content between "") with the path to your TIFF file directory. Use double backslashes (\\) if the raw path copied form the folder path did not work or a raw string (prefix with r) to correctly format the path in Python.
 ## Usage
 ## Option 1: Memory-Constrained Version
 Use MemoryConstrainedVersion.py if you are working on a system with limited memory. It resamples the TIFF files to a lower resolution and processes them in smaller chunks to reduce memory usage.
