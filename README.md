@@ -130,7 +130,7 @@ merge_in_chunks(glob.glob(f"{resampled_directory}/*.tif"), final_output_path)
 print(f"Final mosaic created successfully in {output_directory}!")
 ```
 ## Option 2: High-Memory Version
-Use this version if you have a high-memory system or supercomputer. It merges all TIFF files at once without resampling.
+Use HighMemoryVersion.py if you have a high-memory system or supercomputer. It merges all TIFF files at once without resampling.
 
 ```bash
 import os
