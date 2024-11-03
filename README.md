@@ -36,7 +36,13 @@ pip install rasterio numpy
 ```
 ## Configure the PROJ Path
 
-Set the PROJ_LIB environment variable to avoid errors related to the PROJ database. Update the path in the script to match your system's configuration.
+Set the PROJ_LIB environment variable to avoid errors related to the PROJ database. Update the path in the script to match your system's configuration. To find the path to PROJ you can try the following as a standalone script:
+
+```bash
+import pyproj
+print(pyproj.datadir.get_data_dir())
+```
+Which will give you the path required for the following scripts and specifically where the path to PROJ is set: os.environ['PROJ_LIB'] = r"C:\Python310\lib\site-packages\pyproj\proj_dir\share\proj" Replace the path with the one you get in the output of the above code.
 
 ## Usage
 ## Option 1: Memory-Constrained Version
