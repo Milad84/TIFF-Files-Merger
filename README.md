@@ -1,4 +1,5 @@
 # TIFF-Files-Merger
+![image](https://github.com/user-attachments/assets/7644c0f5-1f9a-48cf-affd-f22c533f8578)
 
 # Canopy Cover Mosaic Project
 
