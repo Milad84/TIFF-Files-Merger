@@ -195,3 +195,6 @@ Use QGIS or other GIS platforms to visualize the final mosaic. You can add basem
 ## Adding a Basemap in QGIS
 Install the QuickMapServices plugin from the Plugins menu.
 Use it to add basemaps like Google Satellite or OpenStreetMap.
+
+## Avoid using final_mosaic
+final_mosaic in the output folder. That file is a placeholder and does not represent a merged file of all TIFF files.
