@@ -42,11 +42,11 @@ Set the PROJ_LIB environment variable to avoid errors related to the PROJ databa
 import pyproj
 print(pyproj.datadir.get_data_dir())
 ```
-Which will give you the path required for the following scripts and specifically where the path to PROJ is 
+Which will give you the path required for the following scripts and specifically where the path to PROJ is set:
 
 ```bash
 
-set: os.environ['PROJ_LIB'] = r"C:\Python310\lib\site-packages\pyproj\proj_dir\share\proj"
+ os.environ['PROJ_LIB'] = r"C:\Python310\lib\site-packages\pyproj\proj_dir\share\proj"
 ```
 
  Replace the path with the one you get in the output of the above code.
