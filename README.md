@@ -30,9 +30,10 @@ The Canopy Cover Mosaic Project is designed to handle and process large sets of 
    git clone https://github.com/username/canopy-cover-mosaic.git
    cd canopy-cover-mosaic
 ## Install Dependencies
+
 ```bash
 pip install rasterio numpy
-
+```
 ## Configure the PROJ Path
 
 Set the PROJ_LIB environment variable to avoid errors related to the PROJ database. Update the path in the script to match your system's configuration.
